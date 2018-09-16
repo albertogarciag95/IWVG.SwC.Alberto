@@ -1,7 +1,7 @@
 package es.upm.miw.iwvg.alberto;
 
 public class User {
-//comment for test
+
     private int number;
 
     private String name;
