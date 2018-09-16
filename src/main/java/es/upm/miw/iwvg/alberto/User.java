@@ -1,7 +1,7 @@
 package es.upm.miw.iwvg.alberto;
 
 public class User {
-//change
+
     private int number;
 
     private String name;
