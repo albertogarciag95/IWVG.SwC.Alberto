@@ -1,6 +1,6 @@
-package es.upm.miw.iwvg.test;
+package es.upm.miw.iwvg.junit;
 
-import es.upm.miw.iwvg.alberto.DecimalCollection;
+import es.upm.miw.iwvg.domain.DecimalCollection;
 import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

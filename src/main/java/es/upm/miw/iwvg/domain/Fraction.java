@@ -1,4 +1,4 @@
-package es.upm.miw.iwvg.alberto;
+package es.upm.miw.iwvg.domain;
 
 public class Fraction {
 
