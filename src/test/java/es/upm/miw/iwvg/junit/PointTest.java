@@ -1,12 +1,12 @@
-package es.upm.miw.iwvg.test;
+package es.upm.miw.iwvg.junit;
 
-import es.upm.miw.iwvg.alberto.Point;
+import es.upm.miw.iwvg.domain.Point;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PointTest {
+class PointTest {
     private Point point;
 
     @BeforeEach
