@@ -17,9 +17,9 @@ class FractionTest {
 
     @Test
     void testFraction() {
-
-        assertEquals(4, this.fraction.getNumerator());
-        assertEquals(2, this.fraction.getDenominator());
+        this.fraction = new Fraction();
+        assertEquals(1, this.fraction.getNumerator());
+        assertEquals(1, this.fraction.getDenominator());
     }
 
     @Test

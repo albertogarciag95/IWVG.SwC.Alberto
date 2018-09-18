@@ -50,4 +50,9 @@ class PointTest {
         assertEquals(1, point.getX());
         assertEquals(2, point.getY());
     }
+
+    @Test
+    void testToString() {
+        assertEquals("Point{x="+point.getX()+", y="+point.getY()+"}", point.toString());
+    }
 }
