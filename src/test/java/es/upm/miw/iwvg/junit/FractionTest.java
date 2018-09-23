@@ -36,4 +36,12 @@ class FractionTest {
     void testGetDenominator() {
         assertEquals(2, this.fraction.getDenominator());
     }
+
+    @Test
+    void testMultiply() { assertEquals(4, fraction.multiply(fraction).decimal()); }
+
+    @Test
+    void testDivide() {
+        assertEquals(1, fraction.divide(fraction).decimal());
+    }
 }
