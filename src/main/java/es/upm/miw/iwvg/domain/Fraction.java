@@ -43,6 +43,11 @@ public class Fraction {
         return result;
     }
 
+    public boolean isPropia() {
+        return this.numerator < this.denominator;
+    }
 
-
+    public boolean isImpropia() {
+        return !isPropia();
+    }
 }
