@@ -1,10 +1,12 @@
 package es.upm.miw.iwvg.junit;
 
 import es.upm.miw.iwvg.domain.Fraction;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FractionTest {
 
@@ -12,7 +14,7 @@ class FractionTest {
 
     @BeforeEach
     void before() {
-        this.fraction = new Fraction(4,2);
+        this.fraction = new Fraction(4, 2);
     }
 
     @Test
@@ -38,10 +40,23 @@ class FractionTest {
     }
 
     @Test
-    void testMultiply() { assertEquals(4, fraction.multiply(fraction).decimal()); }
+    void testMultiply() {
+        assertEquals(4, fraction.multiply(fraction).decimal());
+    }
 
     @Test
     void testDivide() {
         assertEquals(1, fraction.divide(fraction).decimal());
     }
+
+    @Test
+    void testIsPropia() {
+        assertTrue(new Fraction(1, 5).isPropia());
+    }
+
+    @Test
+    void testIsImpropia() {
+        assertTrue(new Fraction(10, 2).isImpropia());
+    }
+
 }
