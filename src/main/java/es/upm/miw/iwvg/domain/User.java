@@ -37,4 +37,14 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
+
+    public String fullNameToUpperCase() {
+        String fullName = fullName();
+
+        return isNotEmpty(fullName) ? fullName.toUpperCase() : null;
+    }
+
+    private boolean isNotEmpty(String s) {
+        return s != null && s.length() > 0;
+    }
 }
