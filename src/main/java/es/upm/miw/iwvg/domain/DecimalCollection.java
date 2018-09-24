@@ -43,4 +43,9 @@ public class DecimalCollection {
         }
         return higher;
     }
+
+    public double average() {
+        assert collection != null;
+        return this.sum() / this.size();
+    }
 }
