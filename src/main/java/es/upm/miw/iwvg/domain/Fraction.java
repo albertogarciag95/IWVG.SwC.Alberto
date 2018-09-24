@@ -50,4 +50,12 @@ public class Fraction {
     public boolean isImpropia() {
         return !isPropia();
     }
+
+    public boolean isHigherThan(Fraction fraction) {
+        return this.getNumerator() / this.getDenominator() > fraction.getNumerator() / fraction.getDenominator();
+    }
+
+    public boolean isLowerThan(Fraction fraction) {
+        return this.getNumerator() / this.getDenominator() < fraction.getNumerator() / fraction.getDenominator();
+    }
 }

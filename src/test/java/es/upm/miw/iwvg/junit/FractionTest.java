@@ -59,4 +59,13 @@ class FractionTest {
         assertTrue(new Fraction(10, 2).isImpropia());
     }
 
+    @Test
+    void testIsHiger() {
+        assertTrue(fraction.isHigherThan(new Fraction(10, -2)));
+    }
+
+    @Test
+    void testIsLower() {
+        assertTrue(fraction.isLowerThan(new Fraction(10, 2)));
+    }
 }
