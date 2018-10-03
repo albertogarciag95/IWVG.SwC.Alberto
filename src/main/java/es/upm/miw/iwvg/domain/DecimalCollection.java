@@ -25,14 +25,7 @@ public class DecimalCollection {
         if (this.collection.isEmpty()) {
             throw new ArithmeticException("Empty collection");
         }
-        /*
-        double sum = 0;
-        for (double item : this.collection) {
-            sum += item;
-        }
-        return sum;
-        */
-        // return this.collection.stream().mapToDouble(value -> value).sum();
+
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
 
     }
@@ -49,5 +42,10 @@ public class DecimalCollection {
             }
         }
         return higher;
+    }
+
+    public double average() {
+        assert collection != null;
+        return this.sum() / this.size();
     }
 }
